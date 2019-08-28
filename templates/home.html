@@ -1,10 +1,12 @@
 <!-- templates/home.html -->
 {% extends '_base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
 <h1>Homepage</h1>
+<img class="shibainu" src="{% static 'images/2560x1600_px_animals_dog_Shiba_Inu_snow-727583.jpg' %}">
 {% if user.is_authenticated %}
   Hi {{ user.email }} !
   <p><a href="{% url 'logout' %}">Log Out</a></p>

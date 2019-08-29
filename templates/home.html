@@ -9,10 +9,10 @@
 <img class="shibainu" src="{% static 'images/2560x1600_px_animals_dog_Shiba_Inu_snow-727583.jpg' %}">
 {% if user.is_authenticated %}
   Hi {{ user.email }} !
-  <p><a href="{% url 'logout' %}">Log Out</a></p>
+  <p><a href="{% url 'account_logout' %}"></a></p>
 {% else %}
   <p>You are not logged in</p>
-  <a href="{% url 'login' %}">Log In</a>
-  <a href="{% url 'signup' %}">Sign Up</a>
+  <a href="{% url 'account_login' %}"></a>
+  <a href="{% url 'account_signup' %}"></a>
 {% endif %}
 {% endblock content %}

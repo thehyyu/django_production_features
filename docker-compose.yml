@@ -4,6 +4,9 @@ services:
   web:
     build: .
     command: python3 /Users/hubertyu/Documents/django_professional/manage.py runserver 0.0.0.0:8000
+    environment:
+      - NEW_SECRET_KEY=%8&00#qd3shk1)#7-hs_3g5vv^m_zf_cf+9el2-3-@yo%4)=o#
+      - DEBUG=1
     volumes: 
       - .:/Users/hubertyu/Documents/django_professional
     ports:

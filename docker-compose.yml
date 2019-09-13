@@ -7,6 +7,8 @@ services:
     environment:
       - NEW_SECRET_KEY=%8&00#qd3shk1)#7-hs_3g5vv^m_zf_cf+9el2-3-@yo%4)=o#
       - DEBUG=1
+      - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_ROBH6oJx2LGpsVz5lpR38KUu005EO4i2iq
+      - STRIPE_TEST_SECRET_KEY=sk_test_FPi5HlqpPVMljV1OaPYZPJsi00deDOFD7f
     volumes: 
       - .:/Users/hubertyu/Documents/django_professional
     ports:

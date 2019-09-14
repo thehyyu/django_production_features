@@ -7,6 +7,9 @@
 {% block content %}
 <h1>Homepage</h1>
 <img class="shibainu" src="{% static 'images/2560x1600_px_animals_dog_Shiba_Inu_snow-727583.jpg' %}">
+<form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="GET">
+  <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search">
+</form>
 {% if user.is_authenticated %}
   Hi {{ user.email }} !
   <p><a href="{% url 'account_logout' %}"></a></p>
